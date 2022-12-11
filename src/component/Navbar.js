@@ -26,6 +26,7 @@ const Navbar = ({authenticate, setAuthenticate}) => {
     const goToHomeAndLogout = () => {
         if(authenticate == true){
             setAuthenticate(false);
+            alert('로그아웃하였습니다')
         }
         navigate('/');
     };
